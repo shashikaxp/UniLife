@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float forwardForce = 100f;
+    public float forwardForce = 10f;
 
     private CharacterController controller;
     private Vector3 direction;
@@ -40,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         // calculate the next lane position
+
         Vector3 position = transform.position.z * transform.forward + transform.position.y * transform.up;
 
         if (lane == 0) {
@@ -48,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
             position += Vector3.right * laneDistance;
         }
 
-        transform.position =  Vector3.Lerp(transform.position, position, 80*Time.deltaTime);
+        transform.position =  Vector3.Lerp(transform.position, position, 150 *Time.deltaTime);
     }
 
     private void FixedUpdate()

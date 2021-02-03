@@ -390,9 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e290aba7318490c836a5c22424e1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 574116403}
-  forwardForce: 1000
-  sideForce: 50
+  forwardForce: 10
 --- !u!54 &574116403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -422,6 +420,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.6645973, z: 1}
   m_Center: {x: 0, y: 0.79250586, z: 0}
+--- !u!143 &574116405
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574116399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +839,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 574116400}
-  offset: {x: 0, y: 5, z: -7}
 --- !u!1 &972986112
 GameObject:
   m_ObjectHideFlags: 0
