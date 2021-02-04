@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float forwardForce = 20;
+    public float forwardForce = 2f;
 
     private CharacterController controller;
     private Vector3 direction;
@@ -58,4 +58,12 @@ public class PlayerMovement : MonoBehaviour
     {
         controller.Move(direction * Time.fixedDeltaTime);
     }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.transform.tag == "Distractions") {
+            PlayerManager.gameOver = true;
+        }
+    }
+
 }
