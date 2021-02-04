@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float forwardForce = 2;
+    public float maxForwardForce = 10;
 
     private CharacterController controller;
     private Vector3 direction;
@@ -15,14 +16,18 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = GetComponent<CharacterController>();
-        direction.z = forwardForce;
+        controller = GetComponent<CharacterController>();        
     }
 
     // Update is called once per frame
     void Update()
     {
-      
+
+        if (forwardForce < maxForwardForce) {
+            forwardForce += 0.1f * Time.deltaTime;
+        }
+
+        direction.z = forwardForce;
         if (Input.GetKeyDown("d"))
         {
             lane++;
