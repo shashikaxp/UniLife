@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float forwardForce = 10f;
+    public float forwardForce = 20;
 
     private CharacterController controller;
     private Vector3 direction;
@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         else if (Input.GetKeyDown("a"))
-        {;
+        {
             lane--;
             if (lane == -1)
             {
@@ -49,7 +49,9 @@ public class PlayerMovement : MonoBehaviour
             position += Vector3.right * laneDistance;
         }
 
-        transform.position =  Vector3.Lerp(transform.position, position, 150 *Time.deltaTime);
+        transform.position = position;
+        controller.center = controller.center;
+
     }
 
     private void FixedUpdate()
