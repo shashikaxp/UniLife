@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e290aba7318490c836a5c22424e1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardForce: 0
+  forwardForce: 5
 --- !u!54 &574116403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -353,7 +353,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 114
   m_CollisionDetection: 0
 --- !u!65 &574116404
 BoxCollider:

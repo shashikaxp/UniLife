@@ -19,7 +19,12 @@ public class RoadManager : MonoBehaviour
     {
         for (int i = 0; i < numberOfPrefabs; i++)
         {
-            SpawnRoad(Random.Range(0, roadPrefabs.Length));
+            if (i == 0) {
+                SpawnRoad(0);
+            } else {
+                SpawnRoad(Random.Range(0, roadPrefabs.Length));
+            }
+          
         }
     }
 

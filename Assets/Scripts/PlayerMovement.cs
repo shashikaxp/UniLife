@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float forwardForce = 2f;
+    public float forwardForce = 2;
 
     private CharacterController controller;
     private Vector3 direction;
@@ -16,12 +16,13 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        direction.z = forwardForce;
     }
 
     // Update is called once per frame
     void Update()
     {
-        direction.z = forwardForce;
+      
         if (Input.GetKeyDown("d"))
         {
             lane++;
@@ -49,8 +50,23 @@ public class PlayerMovement : MonoBehaviour
             position += Vector3.right * laneDistance;
         }
 
-        transform.position = position;
-        controller.center = controller.center;
+        //transform.position = position;
+        if (transform.position == position)
+        {
+            return;
+        }
+        else {
+            Vector3 difference = position - transform.position;
+            Vector3 movingDirection = difference.normalized * 100 * Time.deltaTime;
+            if (movingDirection.sqrMagnitude < difference.sqrMagnitude)
+            {
+                controller.Move(movingDirection);
+            }
+            else {
+                controller.Move(difference);    
+            }
+        }
+        //controller.center = controller.center;
 
     }
 
