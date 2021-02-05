@@ -55,7 +55,6 @@ public class PlayerMovement : MonoBehaviour
             position += Vector3.right * laneDistance;
         }
 
-        //transform.position = position;
         if (transform.position == position)
         {
             return;
@@ -71,7 +70,6 @@ public class PlayerMovement : MonoBehaviour
                 controller.Move(difference);    
             }
         }
-        //controller.center = controller.center;
 
     }
 
