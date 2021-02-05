@@ -15,6 +15,9 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.text = player.position.z.ToString("0");
+        if (!PlayerManager.gameOver) {
+            PlayerManager.distance = (int)player.position.z;
+            score.text = PlayerManager.distance.ToString("0");
+        }
     }
 }

@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     public static bool gameOver;
     public static int socialLife;
     public static int academicLife;
+    public static int distance;
 
     public Text socialLifeText;
     public Text academicLifeText;
@@ -17,6 +18,7 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         gameOver = false;
+        distance = 0;
         socialLife = 0;
         academicLife = 1;
         Time.timeScale = 1;
