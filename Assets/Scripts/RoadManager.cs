@@ -22,7 +22,14 @@ public class RoadManager : MonoBehaviour
             if (i == 0) {
                 SpawnRoad(0);
             } else {
-                SpawnRoad(Random.Range(0, roadPrefabs.Length));
+                //prefabs index 5-9 is harder with lot of distractions since it is night time
+                if (PlayerManager.isNight) {
+                    SpawnRoad(Random.Range(5, 9));
+                } else {
+                //prefabs index 0-5 is not hard as nigh time prefabs
+                    SpawnRoad(Random.Range(0, 4));
+                }
+             
             }
           
         }

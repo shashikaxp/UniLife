@@ -156,6 +156,11 @@ MonoBehaviour:
   - {fileID: 8280288362579731899, guid: 6e8e1a5ba5630495e908197bc420f321, type: 3}
   - {fileID: 8280288362579731899, guid: 9ca14d8cefbd64823938c9b2daa225cb, type: 3}
   - {fileID: 8280288362579731899, guid: ccb7ea14c8d154f48b45e40f93cdb523, type: 3}
+  - {fileID: 8280288362579731899, guid: 1284e3dca23e64b9abb019c4948ecc46, type: 3}
+  - {fileID: 8280288362579731899, guid: e078872b48c874fbebe589144af9bc94, type: 3}
+  - {fileID: 8280288362579731899, guid: b3a3b0ee6dc9c4a88acd3651dcddc1ae, type: 3}
+  - {fileID: 8280288362579731899, guid: 16b1b4d55f394488ea09acb534b59565, type: 3}
+  - {fileID: 8280288362579731899, guid: 8cf5fdad2a9b544eb9d8db1b4a7a70e8, type: 3}
   spawnZ: 0
   roadLength: 30
   numberOfPrefabs: 3
@@ -231,7 +236,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f179f9e43090a4ffe9ac797d6e514017, type: 3}
+    m_Font: {fileID: 12800000, guid: 5651edc4b6e4a43aa9d714a526c06982, type: 3}
     m_FontSize: 29
     m_FontStyle: 0
     m_BestFit: 0
@@ -634,7 +639,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f179f9e43090a4ffe9ac797d6e514017, type: 3}
+    m_Font: {fileID: 12800000, guid: 5651edc4b6e4a43aa9d714a526c06982, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -790,7 +795,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f179f9e43090a4ffe9ac797d6e514017, type: 3}
+    m_Font: {fileID: 12800000, guid: 5651edc4b6e4a43aa9d714a526c06982, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
@@ -1122,7 +1127,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f179f9e43090a4ffe9ac797d6e514017, type: 3}
+    m_Font: {fileID: 12800000, guid: 5651edc4b6e4a43aa9d714a526c06982, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
@@ -1174,6 +1179,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   socialLifeText: {fileID: 1807697520}
   academicLifeText: {fileID: 1134099257}
+  scoreLabel: {fileID: 222377953}
+  score: {fileID: 987702386}
+  cam: {fileID: 963194227}
 --- !u!4 &2002822900
 Transform:
   m_ObjectHideFlags: 0
