@@ -28,7 +28,7 @@ public class PlayerManager : MonoBehaviour
         isNight = false;
         distance = 0;
         socialLife = 0;
-        academicLife = 1;
+        academicLife = 5;
         Time.timeScale = 1;
         cam.clearFlags = CameraClearFlags.SolidColor;
         FindObjectOfType<AudioManager>().PlaySound("Theme");
@@ -42,7 +42,7 @@ public class PlayerManager : MonoBehaviour
             SceneManager.LoadScene("Credits");
         }
 
-        if (academicLife == 0) {
+        if (academicLife <= 0) {
             gameOver = true;
         }
 

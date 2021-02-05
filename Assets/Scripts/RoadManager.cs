@@ -8,7 +8,7 @@ public class RoadManager : MonoBehaviour
     public GameObject[] roadPrefabs;
     public float spawnZ = 0;
     public float roadLength = 0;
-    public int numberOfPrefabs = 2;
+    public int numberOfPrefabs = 3;
 
     public Transform playerTransform;
 
@@ -38,7 +38,7 @@ public class RoadManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerTransform.position.z - 35 > spawnZ - (numberOfPrefabs * roadLength)) {
+        if (playerTransform.position.z - 20 > spawnZ - (numberOfPrefabs * roadLength)) {
             SpawnRoad(Random.Range(0, roadPrefabs.Length));
             DeleteOldRoadPrefab();
         }
