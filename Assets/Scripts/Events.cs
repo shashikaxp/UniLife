@@ -5,7 +5,6 @@ using UnityEngine;
 public class Events : MonoBehaviour
 {
     public void ReplayGame() {
-        Debug.Log("REPLAY");
         SceneManager.LoadScene("Game");
     }
 

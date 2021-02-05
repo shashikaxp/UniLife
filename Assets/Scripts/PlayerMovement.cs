@@ -80,11 +80,5 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(direction * Time.fixedDeltaTime);
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        if (hit.transform.tag == "Distractions") {
-            PlayerManager.gameOver = true;
-        }
-    }
 
 }

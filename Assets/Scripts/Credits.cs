@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class Credits : MonoBehaviour
 {
+    void Start() {
+        FindObjectOfType<AudioManager>().PlaySound("GameOver");
+    }
+
     public void ReplayGame()
     {
-        Debug.Log("REPLAY");
         SceneManager.LoadScene("Game");
     }
 
