@@ -28,14 +28,14 @@ public class PlayerMovement : MonoBehaviour
         }
 
         direction.z = forwardForce;
-        if (Input.GetKeyDown("d"))
+        if (SwipeManager.swipeRight)
         {
             lane++;
             if (lane == 3) {
                 lane = 2;
             }
         }
-        else if (Input.GetKeyDown("a"))
+        else if (SwipeManager.swipeLeft)
         {
             lane--;
             if (lane == -1)

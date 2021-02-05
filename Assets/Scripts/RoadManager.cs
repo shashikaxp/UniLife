@@ -8,7 +8,7 @@ public class RoadManager : MonoBehaviour
     public GameObject[] roadPrefabs;
     public float spawnZ = 0;
     public float roadLength = 0;
-    public int numberOfPrefabs = 3;
+    public int numberOfPrefabs = 2;
 
     public Transform playerTransform;
 
