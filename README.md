@@ -1,3 +1,3 @@
 # UniLife
 
-<a href="https://imgur.com/43QNYBb"><img src="https://imgur.com/43QNYBb"></a>
+<a href="https://i.imgur.com/43QNYBb.gifv"><img src="https://imgur.com/43QNYBb"></a>
