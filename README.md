@@ -1,3 +1,3 @@
 # UniLife
 
-![](https://i.imgur.com/43QNYBb.gif)
+![unilife](https://i.imgur.com/43QNYBb.gif)
